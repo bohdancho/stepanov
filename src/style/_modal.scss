@@ -1,0 +1,111 @@
+.modal {
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__wrap {
+        display: flex;
+    }
+    &__left {
+        padding: 62px 128px 62px 62px;
+        background: #ffffff;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+    &__title {
+        margin-bottom: 26px;
+        color: #383d37;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &__right {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: linear-gradient(45deg, rgba(26,132,146,1) 0%, rgba(73,92,114,1) 100%);
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+    &__input {
+        margin-bottom: 20px;
+        padding: 0 0 4px 0;
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid rgba(#d4d4d4, 0.5);
+        transition: 0.2s ease;
+        &_textarea {
+            height: 76px;
+            resize: vertical;
+        }
+        &::placeholder {
+            color: #383d37;
+            font-family: "Gotham Pro";
+            font-size: 14px;
+        }
+        &:focus {
+            &::placeholder {
+                opacity: 0;
+            }
+            border-color: #2d2d2d;
+        }
+    }
+    &__btn {
+        padding: 10px 44px;
+        box-shadow: 0 2px 15px 6px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background: linear-gradient(45deg, rgba(26,132,146,1) 0%, rgba(73,92,114,1) 100%);
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__logo {
+        margin: 0 auto 16px;
+        max-width: 160px;
+    }
+    &__descr {
+        color: #ffffff;
+        font-family: "Gotham Pro";
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .modal {
+        &__left {
+            padding: 35px 50px 35px 35px;
+        }
+        &__right {
+            padding: 0 35px;
+        }
+        &__title {
+            font-size: 26px;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .modal {
+        &__wrap {
+            flex-direction: column;
+        }
+        &__left {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 0px;
+        }
+        &__right {
+            padding: 35px;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+    }
+}
