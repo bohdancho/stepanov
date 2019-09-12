@@ -74,6 +74,9 @@
     .main {
         background-position: bottom center;
         background-size: auto 100%;
+        &-container {
+            width: 420px;
+        }
         &__title {
             margin-bottom: 4vh;
             font-size: 25px;
@@ -90,6 +93,14 @@
         }
         &-link__img {
             width: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main {
+        &-container {
+            width: 300px;
         }
     }
 }
