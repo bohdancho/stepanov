@@ -122,14 +122,27 @@
 
 @media screen and (max-width: $sm) {
     .footer {
+        &__logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
         &__list {
             flex-direction: column;
+        }
+        &__textblock {
+            max-width: 100%;
         }
         &__block {
             margin: 14px 0 0;
         }
         &__subtitle {
             margin-bottom: 7px;
+        }
+        &__social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

@@ -37,6 +37,7 @@
         line-height: 24px;
     }
     &__link {
+        z-index: 2;
         position: absolute;
         bottom: 40px;
         left: 50%;
@@ -72,21 +73,18 @@
 @media screen and (max-width: $sm) {
     .main {
         background-position: bottom center;
-        background-size: auto 50%;
-        // padding-top: 26px;
-        // &-container {
-        //     justify-content: flex-start;
-        // }
+        background-size: auto 100%;
         &__title {
-            margin-bottom: 15px;
+            margin-bottom: 4vh;
             font-size: 25px;
         }
         &__text {
-            margin-bottom: 11px;
+            margin-bottom: 4vh;
             font-size: 14px;
-            line-height: 1.2;
+            line-height: 1.8;
         }
         &__btn {
+            margin: 0 auto;
             padding: 7px 15px;
             font-size: 14px;
         }
