@@ -18,9 +18,10 @@
         display: none;
     }
     &__item {
+        margin-bottom: -13px;
+        padding: 0 0 12px;
         display: inline-block;
         border: none;
-        padding: 0;
         background: none;
         color: #ffffff;
         cursor: pointer;
@@ -36,7 +37,7 @@
             height: 3px;
             transition: 0.2s ease;
             position: absolute;
-            bottom: -12px;
+            bottom: 0;
             left: 50%;
             transform: translateX(-50%);
             background-color: #008097;
@@ -59,11 +60,13 @@
     }
     .nav {
         &__item {
+            margin-bottom: -7px;
+            padding-bottom: 7px;
             &:not(:last-child) {
                 margin-right: 30px;
             }
             &:after {
-                bottom: -7px;
+                bottom: 0;
             }
         }
     }
@@ -124,8 +127,8 @@
             display: block;
         }
         &__item {
-            margin-bottom: 20px;
-            margin-right: 0;
+            margin: 0 0 20px;
+            padding: 0;
             display: block;
             color: #02051e;
             font-size: 20px;
