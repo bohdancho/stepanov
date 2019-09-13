@@ -95,12 +95,42 @@
             width: 24px;
         }
     }
+    @media screen and (max-height: 555px) {
+        .main {
+            padding-top: 20px;
+            &-container {
+                justify-content: flex-start;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 550px) {
     .main {
         &-container {
             width: 300px;
+        }
+    }
+    @media screen and (max-height: 630px) {
+        .main {
+            padding-top: 4vh;
+            &-container {
+                justify-content: flex-start;
+            }
+            &__title {
+                margin-bottom: 2vh;
+            }
+            &__text {
+                margin-bottom: 2vh;
+            }
+        }
+    }
+    @media screen and (max-height: 530px) {
+        .main {
+            padding-top: 0;
+            &__text {
+                line-height: 1.5;
+            }
         }
     }
 }
