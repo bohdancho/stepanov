@@ -145,6 +145,11 @@
         }
         &__subtitle {
             margin-bottom: 7px;
+            text-align: center;
+        }
+        &__nav__item {
+            width: 100%;
+            text-align: center;
         }
         &__social {
             display: flex;
