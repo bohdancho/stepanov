@@ -61,6 +61,8 @@ window.addEventListener("scroll", event => {
     Modal
 */
 
+let scrollWidth = window.innerWidth - document.documentElement.clientWidth;
+
 $('.darken-bg').on('click', closeModal);
 $('.js-open-modal').on('click', openModal);
 
@@ -68,11 +70,13 @@ function openModal() {
     $('.modal').fadeIn();
     $('.darken-bg').fadeIn();
     $('body').addClass('locked');
+    $('body').css('padding-right', scrollWidth)
 };
 function closeModal() {
     $('.modal').fadeOut();
     $('.darken-bg').fadeOut();
     $('body').removeClass('locked');
+    $('body').css('padding-right', '0');
 }
 
 /*
