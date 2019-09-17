@@ -10,6 +10,8 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        z-index: 1;
+        position: relative;
     }
     &__title {
         margin-bottom: 28px;
